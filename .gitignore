@@ -20,8 +20,7 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
-#Person folder
-/Qt-Material-theme/*
+#JetBrain cache folder
 /.idea/*
 /**/__pycache__
 #Pdf Files
