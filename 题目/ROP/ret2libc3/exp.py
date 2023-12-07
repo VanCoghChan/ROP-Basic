@@ -2,6 +2,7 @@ from pwn import *
 
 sh = process("./ret2libc3")
 elf = ELF("./ret2libc3")
+# Please use “LDD” to check libc.so file in your own machine
 libc = ELF("/lib/i386-linux-gnu/libc.so.6")
 print(sh.recv())
 puts_libc_addr = libc.symbols["puts"]
